@@ -15,7 +15,10 @@ public class LookingGlass extends AppCompatActivity {
         WebView myWebView = (WebView) findViewById(R.id.webview);
         myWebView.loadUrl("https://lg.as139233.net");
         WebSettings webSettings = myWebView.getSettings();
+        webSettings.setLoadWithOverviewMode(true);
+        webSettings.setUseWideViewPort(true);
         webSettings.setJavaScriptEnabled(true);
 
     }
+
 }
